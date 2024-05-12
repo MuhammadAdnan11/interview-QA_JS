@@ -117,7 +117,7 @@ none are true
 ```
 
 ### In this exercise, we'll create a Magic 8-Ball random answer generator:
-``
+```
 1. Start by setting a variable that gets a random value assigned to it. The value
 is assigned by generating a random number 0-5, for 6 possible results. You
 can increase this number as you add more results.
