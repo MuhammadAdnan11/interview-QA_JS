@@ -1,5 +1,5 @@
 # interview-QA_JS
-## Follow me, if you like these contents and wanna further in the future...✅❤
+## Follow me and give Stars⭐⭐, if you like these contents and wanna further in the future...✅❤
 
 ### Which one is generally better, line 1 or line 2?
 ```
