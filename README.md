@@ -74,7 +74,7 @@ state: "Texas"
 
 ```
 
-### Output ..
+### Output ...?
 ```
 1. Create an object named people that contains an empty array that is called
 friends.
@@ -100,7 +100,7 @@ myArr3.sort();
 myArr3.length = 0;
 console.log(myArr3[0]);
 ```
-### Output...
+### Output...?
 ```
 1. Create a variable called prize and use a prompt to ask the user to set the
 value by selecting a number between 0 and 10
@@ -162,7 +162,7 @@ switch (prize) {
 alert(outputMessage);
 ```
 
-###  Output the response message variable to the console
+###  Output the response message variable to the console?
 ```
 1. Create a prompt to ask the user's age
 2. Convert the response from the prompt to a number
@@ -191,5 +191,91 @@ printed for the user. You can assign different string values for each case,
 assigning new values depending on the results from the random value.
 5. Output the user's original question, plus the randomly selected case
 response, to the console after the user enters their question.`
+
+```
+### Evaluating a number game
+```
+Ask the user to enter a number and check whether it's greater than, equal to, or less
+than a dynamic number value in your code. Output the result to the user.
+```
+### Answer
+```
+// Dynamic number value
+let dynamicNumber = 20;
+
+// Prompt user to enter a number
+let userNumber = prompt("Please enter a number:");
+
+// Convert user input to a number data type
+userNumber = parseFloat(userNumber);
+
+// Check if userNumber is greater than, equal to, or less than dynamicNumber
+if (userNumber > dynamicNumber) {
+    console.log(userNumber + " is greater than " + dynamicNumber);
+} else if (userNumber === dynamicNumber) {
+    console.log(userNumber + " is equal to " + dynamicNumber);
+} else {
+    console.log(userNumber + " is less than " + dynamicNumber);
+}
+
+```
+
+### Rock Paper Scissors game
+```
+This is a game between a player and the computer, where both will make a random
+selection of either Rock, Paper, or Scissors (alternatively, you could create a version
+using real player input!). Rock will beat out Scissors, Paper will beat out Rock, and
+Scissors will beat out Paper. You can use JavaScript to create your own version of
+this game, applying the logic with an if statement. Since this project is a little more
+difficult, here are some suggested steps:
+1. Create an array that contains the variables Rock, Paper, and Scissors.
+2. Set up a variable that generates a random number 0-2 for the player and then
+do the same for the computer's selection. The number represents the index
+values in the array of the 3 items.
+3. Create a variable to hold a response message to the user. This can show the
+random results for the player and then also the result for the computer of the
+matching item from the array.
+4. Create a condition to handle the player and computer selections. If both are
+the same, this results in a tie.
+5. Use conditions to apply the game logic and return the correct results.
+There are several ways to do this with the condition statements, but you
+could check which player's index value is bigger and assign the victory
+accordingly, with the exception of Rock beating Scissors.
+6. Add a new output message that shows the player selection versus the
+computer selection and the result of the game.
+```
+### Answer
+```
+// Step 1: Create an array for the options
+const options = ["Rock", "Paper", "Scissors"];
+
+// Step 2: Generate random selections for player and computer
+const playerIndex = Math.floor(Math.random() * 3); // Generates random index for player
+const computerIndex = Math.floor(Math.random() * 3); // Generates random index for computer
+
+// Step 3: Create a variable to hold response message
+let resultMessage = "";
+
+// Step 4: Handle tie condition
+if (playerIndex === computerIndex) {
+    resultMessage = "It's a tie!";
+} else {
+    // Step 5: Apply game logic
+    if (
+        (playerIndex === 0 && computerIndex === 2) || // Rock beats Scissors
+        (playerIndex > computerIndex && !(playerIndex === 2 && computerIndex === 0))
+    ) {
+        resultMessage = "You win!";
+    } else {
+        resultMessage = "Computer wins!";
+    }
+}
+
+// Step 6: Output message showing player and computer selection and result
+const playerSelection = options[playerIndex];
+const computerSelection = options[computerIndex];
+console.log("Player: " + playerSelection);
+console.log("Computer: " + computerSelection);
+console.log("Result: " + resultMessage);
 
 ```
