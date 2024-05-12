@@ -100,6 +100,67 @@ myArr3.sort();
 myArr3.length = 0;
 console.log(myArr3[0]);
 ```
+### Output...
+```
+1. Create a variable called prize and use a prompt to ask the user to set the
+value by selecting a number between 0 and 10
+2. Convert the prompt response to a number data type
+3. Create a variable to use for the output message containing the value "My
+Selection: "
+4. Using the switch statement (and creativity), provide a response back
+regarding a prize that is awarded depending on what number is selected
+5. Use the switch break to add combined results for prizes
+6. Output the message back to the user by concatenating your prize variable
+strings and the output message string
+```
+### Answer
+```
+// Step 1: Prompt user to set the value of the prize variable
+
+let prize = prompt(
+  "Please select a number between 0 and 10 to set the value of the prize:"
+);
+
+// Step 2: Convert the prompt response to a number data type
+prize = parseInt(prize);
+
+// Step 3: Create a variable for the output message
+let outputMessage = "My Selection: ";
+
+// Step 4 & 5: Use switch statement to determine the prize based on the selected number
+switch (prize) {
+  case 0:
+    outputMessage += "Congratulations! You've won a vacation!";
+    break;
+  case 1:
+    outputMessage += "You've won a brand new car!";
+    break;
+  case 2:
+    outputMessage += "You've won a shopping spree!";
+    break;
+  case 3:
+  case 4:
+    outputMessage += "You've won a weekend getaway!";
+    break;
+  case 5:
+  case 6:
+  case 7:
+    outputMessage += "You've won a gift card!";
+    break;
+  case 8:
+  case 9:
+  case 10:
+    outputMessage += "You've won a dinner at a fancy restaurant!";
+    break;
+  default:
+    outputMessage =
+      "Invalid selection. Please choose a number between 0 and 10.";
+}
+
+// Step 6: Output the message back to the user
+// console.log(outputMessage);
+alert(outputMessage);
+```
 
 ###  Output the response message variable to the console
 ```
