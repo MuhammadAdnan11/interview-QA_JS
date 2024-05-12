@@ -316,3 +316,62 @@ while (fibonacciArray.length < 25) {
 }
 console.log(fibonacciArray);
 ```
+
+### Practice exercise
+```
+1. Set the starting counter to 0
+2. Create a variable, step, to increase your counter by
+3. Add a do while loop, printing the counter to the console and incrementing it
+by the step amount each loop
+4. Continue to loop until the counter is equal to 100 or more than 100
+```
+### Solution:
+```
+// Step 1: Set the starting counter to 0
+let counter = 0;
+
+// Step 2: Create a variable, step, to increase your counter by
+const step = 5; // You can adjust this value as needed
+
+// Step 3 & 4: Add a do while loop, printing the counter to the console and incrementing it by the step amount each loop until the counter is equal to 100 or more than 100
+do {
+    console.log("Counter:", counter);
+    counter += step;
+} while (counter < 100);
+
+// Additional check to print 100 if the counter is not exactly 100
+if (counter === 100) {
+    console.log("Counter:", counter);
+}
+
+
+```
+### Practice:
+```
+let arr = [];
+for (let i = 0; i < 100; i++) {
+arr.push(i);
+}
+```
+
+### Quiz
+```
+we will use a for loop to create an array that holds objects. Starting
+with creating a blank array, the block of code within the loop will create an object
+that gets inserted into the array.
+1. Setup a blank array, myWork.
+2. Using a for loop, create a list of 10 objects, each of which is a numbered
+lesson (e.g. Lesson 1, Lesson 2, Lesson 3….) with an alternating true/false
+status for every other item to indicate whether the class will be running this
+year. For example:
+name: 'Lesson 1', status: true
+3. You can specify the status by using a ternary operator that checks whether
+the modulo of the given lesson value is equal to zero and by setting up a
+Boolean value to alternate the values each iteration.
+4. Create a lesson using a temporary object variable, containing the name
+(lesson with the numeric value) and predefined status (which we set up in
+the previous step).
+5. Push the objects to the myWork array.
+6. Output the array to the console.
+```
+
